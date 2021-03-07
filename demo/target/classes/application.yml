@@ -1,0 +1,36 @@
+server:
+  port: 8188
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://119.45.126.136:63306/rescue?serverTimezone=UTC&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://119.45.126.136:63306/rescue?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: Fjl-0821
+  jpa:
+    show-sql: true
+    generate-ddl: true
+  freemarker:
+    cache: false
+    charset: utf-8
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+
+  redis:
+    database: 8
+    host: 119.45.126.136
+    port: 6379
+    password: Fjl-0821
+    timeout: 300
+
+
+
+#logging:
+#  level: info
+#  config: classpath:logback-spring.xml
+#  file:
+#    path: F:\demolog
