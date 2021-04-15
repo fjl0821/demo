@@ -26,6 +26,17 @@ spring:
     port: 6379
     password: Fjl-0821
     timeout: 300
+  mail:
+    username: 1154956359@qq.com
+    password: Fjl-0821
+    host:
+    properties:
+      mail:
+        smtp:
+          auth: true
+    port: 587
 
-
+# 发给谁的邮箱
+#she:
+#  mail: 51421631@qq.com
 
